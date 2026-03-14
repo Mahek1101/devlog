@@ -1,0 +1,70 @@
+.streak-wrapper {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.streak-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.streak-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.streak-summary {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.calendar-scroll { overflow-x: auto; padding-bottom: 4px; }
+
+.calendar-grid {
+  display: flex;
+  gap: 3px;
+  min-width: max-content;
+}
+
+.calendar-week {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cal-day {
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  cursor: default;
+  transition: transform 0.1s;
+}
+
+.cal-day:hover { transform: scale(1.3); }
+
+.level-empty { background: transparent; }
+.level-0  { background: #1e1e1e; }
+.level-1  { background: #1e3a2f; }
+.level-2  { background: #196a3f; }
+.level-3  { background: #26a641; }
+.level-4  { background: #39d353; }
+
+.streak-legend {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 0.75rem;
+  justify-content: flex-end;
+}
+
+.legend-label {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin: 0 2px;
+}
